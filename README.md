@@ -20,9 +20,9 @@ For example, I use the following package, but it can be removed.
 
 3. Create new Commands in sample namespace (or create your own).
 
-4. Declare instance of your newly created commands in `bin/console` like the example.
+Newly created commands are automatically registered in the Application.
 
-Now, you can register and use commands using cli in the same way as you do in a symfony2 full-stack project .
+Now, you can use commands using cli in the same way as a symfony2 full-stack project .
 
 ## Credits
 

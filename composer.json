@@ -1,7 +1,7 @@
 {
   "name": "chalasdev/cli-starter",
   "description": "CLI centered application sample.",
-  "keywords": ["cli", "console", "symfony", "starter", "sample" ],
+  "keywords": ["cli", "console", "symfony", "starter", "sample", "component" ],
   "type": "project",
   "license": "GPL-3.0",
   "authors": [
