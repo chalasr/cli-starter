@@ -1,4 +1,16 @@
 {
+  "name": "chalasdev/cli-starter",
+  "description": "CLI centered application sample.",
+  "keywords": ["cli", "console", "symfony", "starter", "sample" ],
+  "type": "project",
+  "license": "GPL-3.0",
+  "authors": [
+      {
+          "name": "Robin CHALAS",
+          "email": "robin.chalas@gmail.com",
+          "homepage": "https://github.com/chalasr"
+      }
+  ],
     "require": {
         "php": "> 5.4",
         "symfony/console": ">=2.7",

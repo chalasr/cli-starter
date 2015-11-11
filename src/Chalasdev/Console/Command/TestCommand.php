@@ -9,14 +9,14 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Filesystem\Filesystem;
 
 
-class RunCommand extends Command
+class TestCommand extends Command
 {
 
    protected function configure()
    {
       $this
-      ->setName('chalasdev:run')
-      ->setDescription('Sample cli command in interactive mode');
+      ->setName('chalasdev:test')
+      ->setDescription('Test autoload from namespace');
    }
 
    protected function execute(InputInterface $input, OutputInterface $output)
@@ -25,7 +25,7 @@ class RunCommand extends Command
        $formatter = $this->getHelper('formatter');
        $style = new OutputFormatterStyle('white', 'blue', array('bold'));
        $output->getFormatter()->setStyle('title', $style);
-       $welcome = $formatter->formatBlock("Welcome to chalasdev/console-starter", "title", true);
+       $welcome = $formatter->formatBlock("Welcome to chalasdev/console-starter - Test Autoload !", "title", true);
        $output->writeln(['', $welcome, '', 'This project provide standalone for your deployment workflow, built on top of <comment>capistrano/symfony</comment> rubygem .', 'Created by Robin Chalas - github.com/chalasr']);
    }
 

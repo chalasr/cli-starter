@@ -1,44 +1,32 @@
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/a1b5a249-e656-4a0f-af57-77f8f84f2e74/mini.png)](https://insight.sensiolabs.com/projects/a1b5a249-e656-4a0f-af57-77f8f84f2e74)
 
-# chalasdev/capistrano-bundle
+# chalasdev/cli-starter
 
-Symfony/console command that provide automation of your deployment workflow, built on top of Capistrano.
+CLI-Centered sample application that uses only [Console component of Symfony framework](https://github.com/symfony/console).
 
 ## Requirements
 
 - Symfony/Console >= 2.7
-- Symfony/Filesystem >= 2.7
-- Ruby >= 2.0
-- Bundler (rubygem)
-- Capistrano rubygems (Gemfile provided)
 
-## Install
+For example, I use the following package, but it can be removed.
 
-Download the bundle using [composer](http://getcomposer.org/) :
-
-```composer require chalasdev/capistrano-bundle dev-master```
-
-Setup Gemfile and Capfile to manage ruby dependencies :
-
-```app/console capistrano:install```
-
-Install rubygems by running :
-
-```bundle install```
+- Symfony/Filesystem >= 2.7 (Used for sample, can be removed)
 
 ## Usage
 
-Run the following command to setup your deployment workflow based on [capistrano/symfony](https://github.com/capistrano/symfony) tasks :
+1. Clone the repository using `git clone https://github.com/chalasr/cli-starter.git` .
 
-```app/console capistrano:setup```
+2. Do `composer install` to use symfony/console .
 
-## Deploy
+3. Create new Commands in sample namespace (or create your own).
 
-As long as your production branch is up-to-date, you can do ```cap production deploy``` each times you need, without any maintenance or perturbations.
+4. Declare instance of your newly created commands in `bin/console` like the example.
+
+Now, you can register and use commands using cli in the same way as you do in a symfony2 full-stack project .
 
 ## Credits
 
-Author : [Robin Chalas](https:/git.chalasdev.fr/)
+Author : [Robin Chalas](https:/github.com/chalasr)
 
 ## License
 

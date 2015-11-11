@@ -8,8 +8,20 @@ set_time_limit(0);
 
 use Symfony\Component\Console\Application;
 
-$app = new Application('My CLI Application', '0.1.0');
-$app->addCommands(array(
-    new Chalasdev\Console\Command\RunCommand(),
-));
+$list = opendir(__DIR__ . '/../src/Chalasdev/Console/Command');
+while (false !== ($filename = readdir($list))) {
+    if (!in_array($filename, ['.', '..'])) {
+        if (strpos($filename, 'Command.php') !== false) {
+            $className = explode('.php', $filename);
+            $classes[] = $className[0];
+        }
+    }
+}
+
+$app = new Application('chalasdev/cli-starter', '1.0.0');
+foreach ($classes as $command) {
+    $command = "Chalasdev\Console\Command\\".$command;
+    $command = new $command;
+    $app->add($command);
+}
 $app->run();
