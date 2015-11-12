@@ -7,10 +7,9 @@ CLI-Centered sample application that uses only [Console component of Symfony fra
 ## Requirements
 
 - Symfony/Console >= 2.7
+- Doctrine 2
 
 For example, I use the following package, but it can be removed.
-
-- Symfony/Filesystem >= 2.7 (Used for sample, can be removed)
 
 ## Usage
 
