@@ -1,6 +1,6 @@
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/a1b5a249-e656-4a0f-af57-77f8f84f2e74/mini.png)](https://insight.sensiolabs.com/projects/a1b5a249-e656-4a0f-af57-77f8f84f2e74)
 
-# chalasdev/doctrine-starter
+# chalasdev/doctrine-cli
 
 CLI-Centered sample application that uses only [Console component of Symfony framework](https://github.com/symfony/console).
 
