@@ -2,14 +2,18 @@
 
 # chalasdev/doctrine-cli
 
-CLI-Centered sample application that uses only [Console component of Symfony framework](https://github.com/symfony/console).
+CLI-Centered base application that uses [Symfony/Console](https://github.com/symfony/console) and [Doctrine](http://www.doctrine-project.org/).
 
 ## Requirements
 
 - Symfony/Console >= 2.7
 - Doctrine 2
 
-For example, I use the following package, but it can be removed.
+## Installation
+
+- [Download composer](https://getcomposer.org)
+
+- `composer create-projet chalasdev/doctrine-cli`
 
 ## Usage
 
