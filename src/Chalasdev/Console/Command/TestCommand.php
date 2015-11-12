@@ -22,8 +22,8 @@ class TestCommand extends Command
       $formatter = new FormatterHelper();
        $style = new OutputFormatterStyle('white', 'blue', array('bold'));
        $output->getFormatter()->setStyle('title', $style);
-       $welcome = $formatter->formatBlock("Welcome to chalasdev/console-starter - Test Autoload !", "title", true);
-       $output->writeln(['', $welcome, '', 'This project provide standalone for your deployment workflow, built on top of <comment>capistrano/symfony</comment> rubygem .', 'Created by Robin Chalas - github.com/chalasr']);
+       $welcome = $formatter->formatBlock("Welcome to chalasdev/doctrine-cli - Test Autoload !", "title", true);
+       $output->writeln(['', $welcome, '', 'This project provide cli-centered application to manage databases and create interactive commands, using <comment>symfony/console</comment> and <comment>doctrine/orm</comment> .', 'Created by Robin Chalas - github.com/chalasr']);
    }
 
 }

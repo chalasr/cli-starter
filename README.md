@@ -13,15 +13,15 @@ For example, I use the following package, but it can be removed.
 
 ## Usage
 
-1. Clone the repository using `git clone https://github.com/chalasr/cli-starter.git` .
+Work in my sample namespace or create your own.
 
-2. Do `composer install` to use symfony/console .
+Build interactives Commands.
 
-3. Create new Commands in sample namespace (or create your own).
+Import mapping from existing database Or create new Entities.
 
 Newly created commands are automatically registered in the Application.
 
-Now, you can use commands using cli in the same way as a symfony2 full-stack project .
+Use cli in the same way as a symfony2 full-stack project .
 
 ## Credits
 
