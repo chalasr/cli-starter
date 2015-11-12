@@ -26,7 +26,7 @@ while (false !== ($filename = readdir($list))) {
         }
     }
 }
-$app = new Application('chalasdev/cli-starter', '1.0.0');
+$app = new Application('chalasdev/doctrine-cli', '1.1.0');
 $app->setHelperSet($helperSet);
 Doctrine\ORM\Tools\Console\ConsoleRunner::addCommands($app);
 foreach ($classes as $command) {
