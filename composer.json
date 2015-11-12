@@ -1,22 +1,33 @@
 {
-  "name": "chalasdev/cli-starter",
-  "description": "CLI centered application sample.",
-  "keywords": ["cli", "console", "symfony", "starter", "sample", "component" ],
-  "type": "project",
-  "license": "GPL-3.0",
-  "authors": [
-      {
-          "name": "Robin CHALAS",
-          "email": "robin.chalas@gmail.com",
-          "homepage": "https://github.com/chalasr"
-      }
-  ],
+    "name": "chalasdev/cli-starter",
+    "description": "CLI centered application sample.",
+    "keywords": ["cli", "console", "symfony", "starter", "sample", "component" ],
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Robin CHALAS",
+            "email": "robin.chalas@gmail.com",
+            "homepage": "https://github.com/chalasr"
+        }
+    ],
     "require": {
-        "php": "> 5.4",
-        "symfony/console": ">=2.7",
-        "symfony/filesystem": ">=2.7"
+        "php": ">=5.4",
+        "ext-pdo": "*",
+        "doctrine/collections": "~1.2",
+        "doctrine/dbal": ">=2.5-dev,<2.6-dev",
+        "doctrine/instantiator": "~1.0.1",
+        "doctrine/common": ">=2.5-dev,<2.6-dev",
+        "doctrine/cache": "~1.4",
+        "symfony/console": "~2.5"
     },
-    "autoload":     {
-        "psr-0": { "": "src/" }
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "bin": ["bin/console", "bin/doctrine.php"],
+    "archive": {
+        "exclude": ["!vendor", "tests", "*phpunit.xml", ".travis.yml", "build.xml", "build.properties", "composer.phar", "vendor/satooshi", "lib/vendor", "*.swp", "*coveralls.yml"]
     }
 }
