@@ -1,6 +1,6 @@
 {
-    "name": "chalasdev/cli-starter",
-    "description": "CLI centered application sample.",
+    "name": "chalasdev/doctrine-cli",
+    "description": "CLI centered doctrine application sample.",
     "keywords": ["cli", "console", "symfony", "starter", "sample", "component" ],
     "type": "project",
     "license": "GPL-3.0",
