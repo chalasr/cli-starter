@@ -21,21 +21,18 @@
         "doctrine/cache": "~1.4",
         "symfony/console": "~2.5",
         "symfony/yaml": "^2.7",
-        "symfony/filesystem": "^2.7"
+        "symfony/filesystem": "^2.7",
+        "doctrine/orm": "^2.5"
     },
     "autoload": {
         "psr-0": {
-            "": "src/",
-            "Doctrine\\ORM\\": "lib/"
+            "": "src/"
         }
     },
-    "bin": ["bin/console", "bin/doctrine.php"],
-    "archive": {
-        "exclude": ["!vendor", "tests", "*phpunit.xml", ".travis.yml", "build.xml", "build.properties", "composer.phar", "vendor/satooshi", "lib/vendor", "*.swp", "*coveralls.yml"]
-    },
+    "bin": ["bin/console"],
     "scripts": {
         "post-update-cmd": [
-          "php bin/console chalasdev:run"
+          "bin/console chalasdev:run"
         ]
     }
 }
