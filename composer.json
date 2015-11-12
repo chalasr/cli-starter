@@ -23,7 +23,8 @@
     },
     "autoload": {
         "psr-0": {
-            "": "src/"
+            "": "src/",
+            "Doctrine\\ORM\\": "lib/"
         }
     },
     "bin": ["bin/console", "bin/doctrine.php"],
