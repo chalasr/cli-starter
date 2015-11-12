@@ -25,13 +25,13 @@ $classLoader->register();
 $classLoader = new \Doctrine\Common\ClassLoader('Symfony');
 $classLoader->register();
 
-$configFile = getcwd() . DIRECTORY_SEPARATOR . 'cli-config.php';
+$configFile = getcwd().DIRECTORY_SEPARATOR.'cli-config.php';
 
 $helperSet = null;
 if (file_exists($configFile)) {
-    if ( ! is_readable($configFile)) {
+    if (!is_readable($configFile)) {
         trigger_error(
-            'Configuration file [' . $configFile . '] does not have read permission.', E_ERROR
+            'Configuration file ['.$configFile.'] does not have read permission.', E_ERROR
         );
     }
 

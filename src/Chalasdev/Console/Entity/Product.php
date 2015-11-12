@@ -29,9 +29,9 @@ class Product
     protected $name;
 
     /**
-     * Get id
+     * Get id.
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {
@@ -39,7 +39,7 @@ class Product
     }
 
     /**
-     * Set name
+     * Set name.
      *
      * @param string $name
      *
@@ -53,7 +53,7 @@ class Product
     }
 
     /**
-     * Get name
+     * Get name.
      *
      * @return string
      */
