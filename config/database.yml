@@ -4,4 +4,4 @@ parameters:
     database: orm-test
     user: root
     password: root
-    # TODO: driver configuration for sqlite / other.
+    # add driver configuration for sqlite / other.
