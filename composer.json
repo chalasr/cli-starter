@@ -1,6 +1,6 @@
 {
     "name": "chalasdev/doctrine-cli",
-    "description": "CLI centered doctrine application sample.",
+    "description": "CLI centered doctrine application sample that uses symfony/console and doctrine",
     "keywords": ["cli", "console", "symfony", "starter", "sample", "component" ],
     "type": "project",
     "license": "GPL-3.0",
@@ -20,7 +20,8 @@
         "doctrine/common": ">=2.5-dev,<2.6-dev",
         "doctrine/cache": "~1.4",
         "symfony/console": "~2.5",
-        "symfony/yaml": "^2.7"
+        "symfony/yaml": "^2.7",
+        "symfony/filesystem": "^2.7"
     },
     "autoload": {
         "psr-0": {
@@ -31,5 +32,10 @@
     "bin": ["bin/console", "bin/doctrine.php"],
     "archive": {
         "exclude": ["!vendor", "tests", "*phpunit.xml", ".travis.yml", "build.xml", "build.properties", "composer.phar", "vendor/satooshi", "lib/vendor", "*.swp", "*coveralls.yml"]
+    },
+    "scripts": {
+        "post-update-cmd": [
+          "php bin/console chalasdev:run"
+        ]
     }
 }

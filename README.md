@@ -2,7 +2,7 @@
 
 # chalasdev/doctrine-cli
 
-CLI-Centered base application that uses [Symfony/Console](https://github.com/symfony/console) and [Doctrine](http://www.doctrine-project.org/).
+CLI-Centered base application that uses [Symfony/Console](https://github.com/symfony/console) and [Doctrine](http://www.doctrine-project.org/) as standalone composents.
 
 ## Requirements
 
