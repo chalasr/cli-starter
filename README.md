@@ -2,7 +2,7 @@
 # chalasdev/doctrine-cli
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/eb32f3db-bf17-4339-b258-43e5df5f9096/mini.png)](https://insight.sensiolabs.com/projects/eb32f3db-bf17-4339-b258-43e5df5f9096)
 
-CLI-Centered base application that uses [Symfony/Console](https://github.com/symfony/console) and [Doctrine](http://www.doctrine-project.org/) as standalone composents.
+CLI-Centered base application that uses [Symfony/Console](https://github.com/symfony/console) and [Doctrine](http://www.doctrine-project.org/) as standalone components.
 
 ## Requirements
 
@@ -19,7 +19,7 @@ CLI-Centered base application that uses [Symfony/Console](https://github.com/sym
 
 Work in my sample namespace or create your own.
 
-Build interactives Commands.
+Build interactive Commands.
 
 Import mapping from existing database Or create new Entities.
 
