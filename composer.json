@@ -29,10 +29,10 @@
             "": "src/"
         }
     },
-    "bin": ["bin/console"],
+    "bin": ["app/console"],
     "scripts": {
         "post-update-cmd": [
-          "bin/console chalasdev:run"
+          "app/console chalasdev:run"
         ]
     }
 }

@@ -17,6 +17,10 @@ CLI-Centered base application that uses [Symfony/Console](https://github.com/sym
 
 ## Usage
 
+`app/console command [options] [arguments]`
+
+> For list available commands use `app/console list`
+
 Work in my sample namespace or create your own.
 
 Build interactive Commands.
