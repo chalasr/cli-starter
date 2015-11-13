@@ -11,5 +11,5 @@ $db = $parameters['parameters'];
 
 $entityManager = \Doctrine\ORM\EntityManager::create(
     ['url' => "mysql://{$db['user']}:{$db['password']}@{$db['host']}/{$db['database']}"],
-    Setup::createAnnotationMetadataConfiguration(array(__DIR__.'/../src'), $isDevMode, null, null, false)
+    Setup::createAnnotationMetadataConfiguration(array(__DIR__.'/src'), $isDevMode, null, null, false)
 );
