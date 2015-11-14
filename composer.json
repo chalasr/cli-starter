@@ -22,7 +22,8 @@
         "symfony/console": "~2.5",
         "symfony/yaml": "^2.7",
         "symfony/filesystem": "^2.7",
-        "doctrine/orm": "^2.5"
+        "doctrine/orm": "^2.5",
+        "symfony/process": "^2.7"
     },
     "autoload": {
         "psr-0": {
