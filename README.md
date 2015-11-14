@@ -6,8 +6,9 @@ CLI-Centered base application that uses [Symfony/Console](https://github.com/sym
 
 ## Requirements
 
-- Symfony/Console >= 2.7
-- Doctrine 2
+- Symfony/Console
+- Symfony/Yaml
+- Doctrine/ORM
 
 ## Installation
 

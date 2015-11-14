@@ -17,7 +17,7 @@ while (false !== ($filename = readdir($list))) {
     }
 }
 
-$app = new Application('chalasdev/doctrine-cli', '1.1.0');
+$app = new Application('chalasdev/doctrine-cli');
 $app->setHelperSet($helperSet);
 ConsoleRunner::addCommands($app);
 foreach ($classes as $command) {
