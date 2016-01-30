@@ -20,7 +20,8 @@
         "symfony/console": ">=2.3,<=3.2",
         "symfony/yaml": ">=2.3,<=3.2",
         "symfony/filesystem": ">=2.3,<=3.2",
-        "symfony/process": ">=2.3,<=3.2"
+        "symfony/process": ">=2.3,<=3.2",
+        "fabpot/php-cs-fixer": "^1.11"
     },
     "autoload": {
         "psr-0": {

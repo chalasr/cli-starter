@@ -2,12 +2,12 @@
 
 namespace RCH\Console\Command;
 
-use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Input\InputArgument;
-use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Process\ProcessBuilder;
+use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Process\PhpExecutableFinder;
+use Symfony\Component\Process\ProcessBuilder;
 
 class ServerCommand extends Command
 {
@@ -26,9 +26,9 @@ class ServerCommand extends Command
         $output->setVerbosity(10);
         $finder = new PhpExecutableFinder();
         if (false === $binary = $finder->find()) {
-          $output->writeln('<error>Unable to find PHP binary to run server</error>');
+            $output->writeln('<error>Unable to find PHP binary to run server</error>');
 
-          return;
+            return;
         }
         $builder = new ProcessBuilder([$binary, '-S', $input->getArgument('address'), '-t', 'web/']);
         $builder->setTimeout(null);

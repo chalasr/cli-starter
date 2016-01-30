@@ -1,40 +1,34 @@
 
-# rch/doctrine-cli
+# cli-tool
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/eb32f3db-bf17-4339-b258-43e5df5f9096/mini.png)](https://insight.sensiolabs.com/projects/eb32f3db-bf17-4339-b258-43e5df5f9096)
 
 CLI-Centered base application that uses [Symfony/Console](https://github.com/symfony/console) and [Doctrine](http://www.doctrine-project.org/) as standalone components.
 
 ## Requirements
 
-- Symfony/Console
-- Symfony/Yaml
-- Doctrine/ORM
+- Symfony/Console (dev)
+- Symfony/Yaml (dev)
+- Doctrine/ORM (dev)
 
 ## Installation
 
-- [Download composer](https://getcomposer.org)
-
-- `composer create-projet rch/doctrine-cli`
+```bash
+$ composer create-projet chalasr/cli-tool
+```
 
 ## Usage
 
-`app/console command [options] [arguments]`
+```bash
+$ app/console command [options] [arguments]
+```
 
-> For list available commands use `app/console list`
+> For an exhaustive list of available commands use `list`
 
-Work in my sample namespace or create your own.
+Newly created commands are automatically registered in the application.
 
-Build interactive Commands.
-
-Import mapping from existing database Or create new Entities.
-
-Newly created commands are automatically registered in the Application.
+Deal with doctrine entities by using  the `EntityManager`.
 
 Use cli in the same way as a symfony2 full-stack project .
-
-## Credits
-
-Author : [Robin Chalas](https:/github.com/chalasr)
 
 ## License
 
