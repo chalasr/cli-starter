@@ -1,6 +1,6 @@
 <?php
 
-namespace Chalasdev\Console\Entity;
+namespace RCH\Console\Entity;
 
 use Doctrine\ORM\EntityRepository;
 

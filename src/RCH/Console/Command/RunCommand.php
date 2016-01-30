@@ -1,6 +1,6 @@
 <?php
 
-namespace Chalasdev\Console\Command;
+namespace RCH\Console\Command;
 
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 use Symfony\Component\Console\Input\InputInterface;
@@ -13,7 +13,7 @@ class RunCommand extends Command
     protected function configure()
     {
         $this
-      ->setName('chalasdev:run')
+      ->setName('rch:run')
       ->setDescription('Sample cli command in interactive mode');
     }
 
@@ -22,7 +22,7 @@ class RunCommand extends Command
         $formatter = new FormatterHelper();
         $style = new OutputFormatterStyle('white', 'blue', array('bold'));
         $output->getFormatter()->setStyle('title', $style);
-        $welcome = $formatter->formatBlock('Welcome to chalasdev/doctrine-cli', 'title', true);
+        $welcome = $formatter->formatBlock('Welcome to rch/doctrine-cli', 'title', true);
         $output->writeln(['', $welcome, '', 'This project provide cli-centered application to manage databases and create interactive commands, using <comment>symfony/console</comment> and <comment>doctrine/orm</comment> .', 'Created by Robin Chalas - github.com/chalasr']);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Chalasdev\Console\Entity;
+namespace RCH\Console\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Account.
  *
  * @ORM\Table(name="products")
- * @ORM\Entity(repositoryClass="Chalasdev\Console\Entity\ProductRepository")
+ * @ORM\Entity(repositoryClass="RCH\Console\Entity\ProductRepository")
  */
 class Product
 {

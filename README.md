@@ -1,5 +1,5 @@
 
-# chalasdev/doctrine-cli
+# rch/doctrine-cli
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/eb32f3db-bf17-4339-b258-43e5df5f9096/mini.png)](https://insight.sensiolabs.com/projects/eb32f3db-bf17-4339-b258-43e5df5f9096)
 
 CLI-Centered base application that uses [Symfony/Console](https://github.com/symfony/console) and [Doctrine](http://www.doctrine-project.org/) as standalone components.
@@ -14,7 +14,7 @@ CLI-Centered base application that uses [Symfony/Console](https://github.com/sym
 
 - [Download composer](https://getcomposer.org)
 
-- `composer create-projet chalasdev/doctrine-cli`
+- `composer create-projet rch/doctrine-cli`
 
 ## Usage
 

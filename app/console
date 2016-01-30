@@ -7,7 +7,8 @@ use Symfony\Component\Console\Application;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 
 $helperSet = ConsoleRunner::createHelperSet($entityManager);
-$list = opendir(__DIR__.'/../src/Chalasdev/Console/Command');
+$list = opendir(__DIR__.'/../src/RCH/Console/Command');
+
 while (false !== ($filename = readdir($list))) {
     if (!in_array($filename, ['.', '..'])) {
         if (strpos($filename, 'Command.php') !== false) {
@@ -17,12 +18,14 @@ while (false !== ($filename = readdir($list))) {
     }
 }
 
-$app = new Application('chalasdev/doctrine-cli');
+$app = new Application('rch/doctrine-cli');
 $app->setHelperSet($helperSet);
 ConsoleRunner::addCommands($app);
+
 foreach ($classes as $command) {
-    $command = "Chalasdev\Console\Command\\".$command;
+    $command = "RCH\Console\Command\\".$command;
     $command = new $command();
     $app->add($command);
 }
+
 $app->run();
